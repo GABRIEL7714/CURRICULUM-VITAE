@@ -1,91 +1,61 @@
 <!DOCTYPE html>
-<html lang="el">
+<html>
 <head>
-      <title> CV Jose Martinez </title>
-      <meta charset= "UTF-8">
-      <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Formulario</title>
 </head>
-<body >
-  <div class="body">
+<body>
+	<h1>Formulario</h1>
+	<form>
+		<label for="nombre">Nombre y Apellidos:</label>
+		<input type="text" id="nombre" name="nombre"><br><br>
+	<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+	<input type="time" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
 
-  <div class="title">
-    <h1> Curriculum Vitae Jose Martinez </h1>
-  </div>   
-    
-     <img src="C:\Users\usuario\Desktop\apuntes y trabajos facu\TP1\nachoman.jpg"></img>
+	<label for="ocupacion">Ocupación:</label>
+	<input type="text" id="ocupacion" name="ocupacion"><br><br>
 
-  <div class="titulos">
-    <h2> Datos Personales </h2>
-  </div>
+	<label for="contacto">Contacto (telefono, email):</label>
+	<input type="text" id="contacto" name="contacto"><br><br>
 
-  <div class="textos"
-     <ul>
-       <li> Nombre: Jose </li>
-       <li> Apellido: Marinez </li>
-       <li> Nro documento: 39403942 </li>
-       <li> Fecha de nac. : 01/02/1996
-       <li> Lugar de nac: San Carlos De Bariloche </li>
-       <li> Nacionalidad: Argentino </li>
-       <li> Domicilio:Combate de rio santiago 3484 <li>
-       <li> Edad: 21  </li>
-       <li> <a href= "https://www.facebook.com/naaaaaacho"><p> Facebook Page </p> </a> </li>
-     </ul>
-  </div>
+	<label for="nacionalidad">Nacionalidad:</label>
+	<select id="nacionalidad" name="nacionalidad">
+		<option value="Argentina">Argentina</option>
+		<option value="Chile">Chile</option>
+		<option value="Colombia">Colombia</option>
+		<option value="Mexico">Mexico</option>
+		<option value="Peru">Peru</option>
+	</select><br><br>
 
-  <div class="titulos">
-   <h2>  Objetivos: </h2>
-  </div> 
+	<label for="nivel_ingles">Nivel de ingles:</label><br>
+	<input type="radio" id="basico" name="nivel_ingles" value="basico">
+	<label for="basico">Básico</label><br>
+	<input type="radio" id="intermedio" name="nivel_ingles" value="intermedio">
+	<label for="intermedio">Intermedio</label><br>
+	<input type="radio" id="avanzado" name="nivel_ingles" value="avanzado">
+	<label for="avanzado">Avanzado</label><br>
+	<input type="radio" id="fluido" name="nivel_ingles" value="fluido">
+	<label for="fluido">Fluido</label><br><br>
 
-      <ul>
-        <li> Desarrollarme en un ambiente de trabajo que me lleve a nuevas fronteras de conocimiento y aprendizaje
-      </ul>
-  
-  <div class="titulos">
-   <h2>  Experiencia laboral: </h2>
-  </div> 
+	<label for="lenguajes_programacion">Lenguajes de programación:</label><br>
+	<select id="lenguajes_programacion" name="lenguajes_programacion" multiple>
+		<option value="Java">Java</option>
+		<option value="Python">Python</option>
+		<option value="C++">C++</option>
+		<option value="JavaScript">JavaScript</option>
+		<option value="Ruby">Ruby</option>
+	</select><br><br>
 
-     <ul>
-       <li> Abril 2014: Pasante, Radio Nacional, San Carlos de Bariloche, Rio Negro.- (Mantenimiento Equipos de Transmisión/Líneas de Transmisión).- </li>
-       <li> septiembre 2014: Pasantía en el área técnica del casino, Trèsor Casino, San Carlos de Bariloche.- (Mantenimiento General Máquinas de Juegos).-</li>
-       <li> Marzo 2015 Técnico y Supervisor Sistema ILS (Instrument Landing Sistem), Aeropuerto Bariloche y Aeropuerto Esquel.- Empresa: Grupo Río de la Plata S.A. (Ref. Sr. Eduardo Galinelli, 011 5425 8515).-</li>
-       <li> Marzo 2016 Tecnico en el laboratorio de Puesta en marcha de INVAP </li>
-       <li> Diciembre 2016: Tecnico en EANA (Empresa Argentina de Navegacion Aerea) </li>
-     </ul>
+	<label for="aptitudes">Aptitudes:</label>
+	<input type="text" id="aptitudes" name="aptitudes" list="aptitudes_list">
+	<datalist id="aptitudes_list">
+		<option value="Trabajo en equipo">
+		<option value="Comunicación efectiva">
+		<option value="Resolución de problemas">
+		<option value="Liderazgo">
+		<option value="Creatividad">
+	</datalist><br><br>
 
-   <div class="titulos">
-   <h2>  Formacion Academica: </h2>
-   </div>
-     
-     <ul>
-       <li> <a href= "http://dantebariloche.edu.ar/"><p> Primaria Instituto Dante Alighieri San Carlos de Bariloche, Rio Negro desde el 2001 hasta el 2008  </p> </a> </li>
-       <li> <a href= "http://dantebariloche.edu.ar/"><p> Técnico en Electrónica con orientación a las Telecomunicaciones-Colegio Tecnológico del Sur-San Carlos de Bariloche, Rio Negro desde 2009 hasta 2014 </p> </a> </li>
-     </ul>
-
-     <div class="titulos">
-     <h2> Cualificaciones: </h2>
-     </div>
-
-     <ul>
-       <li>	Inglés: Nivel Medio  </li>
-       <li> Italiano: Nivel basico </li>
-       <li> Conocimientos en el aerea de electronica </li>
-     </ul>
-  
-
-
-
-
-
-
-
-
-
-
-     </div>
-
-
-
-
-
-   </body>
-</html>
+	<label for="habilidades">Habilidades:</label><br>
+	<input type="checkbox" id="habilidad1" name="habilidades" value="Habilidad 1">
+	<label for="habilidad1">Habilidad 1</label><br>
+	<input type="checkbox" id="habilidad2" name="habilidades" value="Habilidad">
